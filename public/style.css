@@ -1,0 +1,113 @@
+#home{
+    text-align: center;
+    padding-top:2%;
+    font-size: 40px;
+    font-family: Bodoni MT;
+    color: #EE4C7C;
+  }
+  #intro{
+    text-align: center;
+    font-size:30px;
+    font-family:Bell MT;
+    color:#9A1750;
+    
+  }
+  #desc{
+    text-align: center;
+    font-size:20px;
+    color:#9A1750;
+    font-family:Bell MT;
+
+    }
+    #caption{
+    text-align: center;
+
+      color:#9A1750;
+  
+      font-family:Arial;
+      font-size:20px;
+    }
+    #login{
+      color:#9A1750;
+    }
+    #register{
+      color:#9A1750;
+    }
+.btn{
+  width:150px;
+  height:50px;
+  border-radius: 50px;
+  background-color:#EE4C7C ;
+  color:white;
+  font-family: Bell MT;
+  font-size:20px;
+  padding:auto;
+  margin:auto;
+}
+.btn:hover{
+  background-color: white;
+  border:5px  solid #EE4C7C;
+  color:black;
+}
+.card-text{
+  color:#EE4C7C;
+  font-family:Cambria;
+  word-spacing: 5px;
+}
+.card-body{
+  background-color: #E3E2DF;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card img{
+  max-height:250px;
+}
+.myfooter{
+  padding:20px;
+}
+a{
+  color:white;
+}
+
+h3{
+  font-family:Bell MT;
+  font-weight: bold;
+}
+.myclass h5{
+  font-family: 'Times New Roman';
+   display:inline;
+   font-weight: bold;
+}
+.myclass{
+  font-family:'Times New Roman';
+  font-size:18px;
+}
+
+#bgimage{
+  background-repeat: no-repeat;
+  width:100%;
+  background-size:cover;
+
+}
+#bg{
+  margin-top:130px;
+  border:2px solid black;
+  margin-bottom:300px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color:black;
+  opacity:50%;
+
+}
+.myclass2{
+  font-family:Arial;
+  color:white;
+}
+.myclass2 p{
+  font-size: 20px;
+}
+.nav-item:hover{
+font-size:large;
+font-weight: bold;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </script>
+</head>
+<body>
+    
+    <div class="container-fluid">    
+      <div class="container-fluid p-0">
+        <div class="row ">
+          <div class="col">
+             <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#EE4C7C">
+                <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKB-j62tvW7fCRJGSG2oxhNJ3167eehIhq7w&usqp=CAU"   width="30" height="24" class="d-inline-block align-text-top rounded">
+                        InfoTech Services
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                          <a class="nav-link active mx-3" aria-current="page" href="/" >Home
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active mx-3" href="/internships" >Internships</a>
+                        </li>
+                      </ul>
+                    </div>
+                 </div>
+              </nav>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid m-0 myclass2">
+          <div class="row" id="bgimage"  style="background-image: url(images/i.jpg);height:600px;">
+                <div class="col-sm-8 col-md-6 col-lg-4 br-r" id="bg">
+                  <h3 class="p-3">Internship Application</h3>
+                      <p class="px-3">Fill the form below accurately indicating your potentials 
+                        and suitability to internship applying for.
+                      </p>
+              </div>
+          </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-sm-12 text-center mx-auto">
+  <center><% if(typeof error !== 'undefined'){ %>
+      <div class="alert alert-success alert-dismissible fade show w-50 " role="alert" style="border: 2px solid rgb(146, 124, 124); z-index:88;max-height: 70px;  ">
+        <strong>Application submitted</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div><% } %></center>
+    </div>
+    </div>
+     
+      <div class="container-fluid">
+        <div calss="row">
+          <div class="col">
+            <form  class="card p-4 m-auto my-5 w-75 shadow-lg bg-body rounded" method="POST" action="apply" >
+              <div class="mb-3 row ">
+                <label  class="col-sm-4 col-form-label">Name :</label>
+                <div class="col-sm-4">
+                  <input type="text" placeholder="First Name" name="fname" class="form-control" id="">
+                </div>
+                <div class="col-sm-4">
+                  <input type="text" placeholder="Last Name" name="lname" class="form-control" id="">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label  class="col-sm-4 col-form-label">Date of birth :</label>
+                <div class="col-sm-8">
+                  <input type="text" placeholder="Date of birth" name="dob" class="form-control" id="">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label  class="col-sm-4  col-form-label">Phone Number :</label>
+                <div class="col-sm-8">
+                  <input type="text" placeholder="Phone Number" name="phno" class="form-control" id="">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label  class="col-sm-4 col-form-label">Email Address :</label>
+                <div class="col-sm-8">
+                  <input type="email" placeholder="Email Address" name="email" class="form-control" id="">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label  class="col-sm-4 col-form-label "> Address :</label>
+                <div class="col-sm-8">
+                  <div class="row m-0">
+                    <textarea class="form-control" placeholder="Address" name="address" id="floatingTextarea2" style="height: 100px"></textarea>
+                  </div>
+                  <div class="row mx-0 mt-2">
+                    <div class="col-sm-4"> 
+                      <input type="Text" placeholder="City" name="city" class="form-control" id="">
+                    </div>
+                    <div class="col-sm-4"> 
+                      <input type="Text" placeholder="State" name="state" class="form-control" id="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label  class="col-sm-4 col-form-label">Upload Resume :</label>
+                <div class="col-sm-8">
+                  <input class="form-control w-50" type="file" id="formFile">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label  class="col-sm-4 col-form-label">Describe your skills:</label>
+                <div class="col-sm-8">
+                  <textarea class="form-control"  id="floatingTextarea2" style="height: 100px"></textarea>
+                </div>
+              </div>
+              <div class="row m-3">
+                <div class="col-sm-12 ">
+                  <center><button type="submit" class="btn btn-danger" >Submit</button></center>
+                </div>
+              </div>
+              
+                
+              
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="js/js/bootstrap.bundle.js"></script>
+     
+</body>
+</html>

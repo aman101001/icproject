@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+    
+</head>
+<body>
+  <div class="container-fluid">    
+    <div class="container-fluid p-0">
+      <div class="row ">
+        <div class="col">
+           <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#EE4C7C">
+              <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKB-j62tvW7fCRJGSG2oxhNJ3167eehIhq7w&usqp=CAU"   width="30" height="24" class="d-inline-block align-text-top rounded">
+                      InfoTech Services
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                   <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active mx-3" aria-current="page" href="/" >Home
+                        </a>
+                      </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+          </div>
+      </div>
+    </div>
+     
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col-sm-12 text-center my-5">
+           <h2>Congratulations!</h2>
+           <p>The below table gives the list of candidates who have been selected for the internships at InfoTech Services.</p>
+        </div>
+      </div>
+    </div>
+
+ <div class="container-fluid" style="overflow:hidden;overflow-x: scroll;"">
+  <div class="row">
+      <div class="col-xs-12">
+ <table class="display" id="myTable" >
+  <thead >
+   <tr>
+       <th>First Name</th>
+       <th>Last Name</th>
+       <th>DOB</th>
+       <th>Phone</th>
+       <th>Email</th>
+       <th>Status</th>
+      
+   </tr>
+ </thead>
+ <tbody>
+  <%if(bdata.length>0){
+      bdata.forEach(function(data){
+          %>
+         <%if(data.selected){%>
+        <tr>
+          <td><%=data.fname %></td>
+          <td><%=data.lname %></td>
+          <td><%=data.dob %></td>
+          <td><%=data.phno %></td>
+          <td><%=data.email %></td>
+          <td>
+            selected
+          </td>
+        </tr>
+     <% }%>
+          <%
+      })
+     
+  }else{ %>
+    <p>No data found</p>
+<%
+  } %>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+</div>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+  </script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+  <script src="js/js/bootstrap.bundle.js"></script>
+  <script>
+      $(document).ready( function () {
+      $('#myTable').DataTable();
+  } );
+  </script>
+  
+</body>
+</html>
